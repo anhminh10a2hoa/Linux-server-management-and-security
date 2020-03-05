@@ -31,3 +31,20 @@ You need to install CentOS (It's the binary equivalent of Red Hat and runs great
      - Only allow expections one at the time
 
    - SELinux modes
+
+     - Enforcing - Default mode which will enforce the SELinux security policy on the system
+     - Permissive - SELinux is enabled, but does not enforce. Also logs. Good for troubleshooting
+     - Disabled - SELinux is disabled. Never use this
+
+   - Types of enforcement
+
+     - Type enforcement - Primary control which uses the "targeted" policy
+     - Role-based access control - Enforcement based on a users role
+     - Multi-level security-used in the "targeted" policy, but generally hidden and not often used
+     - Multi-category security - extension of multi-level
+
+   - Features and benefits
+
+     - Policies are separate from enforcement
+     - Greate logging
+     - Controls much of the OS such as files, processes, network, process execution
